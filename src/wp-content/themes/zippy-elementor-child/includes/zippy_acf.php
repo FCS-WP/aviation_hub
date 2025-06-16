@@ -8,7 +8,7 @@ if (function_exists('acf_add_options_page')) {
 // Local JSON acf
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
 function my_acf_json_save_point($path)
-{
+{ 
     $theme_dir = get_stylesheet_directory();
     // Create our directory if it doesn't exist.
     if (!is_dir($theme_dir .= '/acf-field')) {
